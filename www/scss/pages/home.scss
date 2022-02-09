@@ -1,3 +1,47 @@
-body{
-
+body {
+  main {
+    .Biographie {
+      display: flex;
+      padding: 112px;
+      .left {
+        .quote {
+          padding-top: 25px;
+        }
+      }
+      .right {
+        padding-left: 60px;
+      }
+    }
+    .bibliographie {
+      background-color: black;
+      color: white;
+      padding: 112px;
+      .realisations {
+        display: flex;
+        padding-bottom: 150px;
+        .left {
+          padding-right: 70px;
+          .book_img {
+            display: block;
+            border-radius: 179.348px 0px 173.5px;
+          }
+        }
+        .right {
+          .littletitle {
+            padding-bottom: 45px;
+          }
+          .quote {
+            display: flex;
+            padding-top: 25px;
+            .portrait {
+              border-radius: 50%;
+            }
+            .textquote {
+              padding-left: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
 }

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap");
 *, *:before, *:after {
   box-sizing: border-box;
 }
@@ -43,6 +44,92 @@ table {
 input {
   -webkit-appearance: none;
   border-radius: 0;
+}
+
+body .bigtitle {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 80px;
+  text-transform: uppercase;
+}
+body .title {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 80px;
+  text-transform: uppercase;
+}
+body .littletitle {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 60px;
+  text-transform: uppercase;
+}
+body .text {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+}
+body .quotetext {
+  font-family: Source Serif Pro;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 23px;
+}
+body .quoteex {
+  font-family: Source Serif Pro;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+body main .Biographie {
+  display: flex;
+  padding: 112px;
+}
+body main .Biographie .left .quote {
+  padding-top: 25px;
+}
+body main .Biographie .right {
+  padding-left: 60px;
+}
+body main .bibliographie {
+  background-color: black;
+  color: white;
+  padding: 112px;
+}
+body main .bibliographie .realisations {
+  display: flex;
+  padding-bottom: 150px;
+}
+body main .bibliographie .realisations .left {
+  padding-right: 70px;
+}
+body main .bibliographie .realisations .left .book_img {
+  display: block;
+  border-radius: 179.348px 0px 173.5px;
+}
+body main .bibliographie .realisations .right .littletitle {
+  padding-bottom: 45px;
+}
+body main .bibliographie .realisations .right .quote {
+  display: flex;
+  padding-top: 25px;
+}
+body main .bibliographie .realisations .right .quote .portrait {
+  border-radius: 50%;
+}
+body main .bibliographie .realisations .right .quote .textquote {
+  padding-left: 16px;
 }
 
 /*# sourceMappingURL=style.css.map */
