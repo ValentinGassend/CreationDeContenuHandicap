@@ -1,48 +1,68 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap");
+
+html {
+  font-size: 20px;
+  line-height: 1.5;
+  font-kerning: normal;
+  font-optical-sizing: always;
+
+  @supports (font-smooth: always) {
+    font-smooth: always;
+  }
+}
+
 body {
   .bigtitle {
+    margin-bottom: 1em;
     font-family: Source Sans Pro;
     font-style: normal;
     font-weight: 600;
-    font-size: 64px;
-    line-height: 80px;
+    font-size: 3em;
+    line-height: 0.8;
     text-transform: uppercase;
   }
   .title {
+    margin-bottom: 1.2em;
     font-family: Source Sans Pro;
     font-style: normal;
     font-weight: 600;
-    font-size: 64px;
-    line-height: 80px;
+    font-size: 2.25em;
+    line-height: 1;
     text-transform: uppercase;
   }
   .littletitle {
+    margin-bottom: 0.5em;
     font-family: Source Sans Pro;
     font-style: normal;
     font-weight: 600;
-    font-size: 48px;
-    line-height: 60px;
+    font-size: 1.5em;
+    line-height: 1.1;
     text-transform: uppercase;
   }
   .text {
     font-family: Source Sans Pro;
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
-    line-height: 23px;
+    font-size: 1em;
+    line-height: 1.6;
   }
   .quotetext {
     font-family: Source Serif Pro;
     font-style: italic;
     font-weight: 300;
-    font-size: 18px;
-    line-height: 23px;
+    font-size: 20px;
+    line-height: 1.6;
   }
   .quoteex {
     font-family: Source Serif Pro;
     font-style: normal;
     font-weight: 300;
-    font-size: 18px;
-    line-height: 23px;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+
+  p {
+    max-width: 68ex;
+    @extend .text;
   }
 }

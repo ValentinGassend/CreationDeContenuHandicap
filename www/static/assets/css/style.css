@@ -1,21 +1,79 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap");
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
-html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+html,
+body,
+div,
+span,
+object,
+iframe,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+code,
+em,
+img,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+b,
+u,
+i,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+main,
+canvas,
+embed,
+footer,
+header,
+nav,
+section,
+video {
   margin: 0;
   padding: 0;
   border: 0;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  /* Améliorer la lisibilité du texte */
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   text-size-adjust: none;
 }
 
-footer, header, nav, section, main {
+footer,
+header,
+nav,
+section,
+main {
   display: block;
 }
 
@@ -23,15 +81,20 @@ body {
   line-height: 1;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after, q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: "";
   content: none;
 }
@@ -46,73 +109,116 @@ input {
   border-radius: 0;
 }
 
+::selection {
+  color: #ededed;
+  background-color: #101010;
+}
+
+.wrapper {
+  --width: 1440px;
+  --padding: 1em;
+  max-width: var(--width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--padding);
+  padding-right: var(--padding);
+}
+
+html {
+  font-size: 20px;
+  line-height: 1.5;
+  font-kerning: normal;
+  font-optical-sizing: always;
+}
+@supports (font-smooth: always) {
+  html {
+    font-smooth: always;
+  }
+}
+
 body .bigtitle {
+  margin-bottom: 1em;
   font-family: Source Sans Pro;
   font-style: normal;
   font-weight: 600;
-  font-size: 64px;
-  line-height: 80px;
+  font-size: 3em;
+  line-height: 0.8;
   text-transform: uppercase;
 }
 body .title {
+  margin-bottom: 1.2em;
   font-family: Source Sans Pro;
   font-style: normal;
   font-weight: 600;
-  font-size: 64px;
-  line-height: 80px;
+  font-size: 2.25em;
+  line-height: 1;
   text-transform: uppercase;
 }
 body .littletitle {
+  margin-bottom: 0.5em;
   font-family: Source Sans Pro;
   font-style: normal;
   font-weight: 600;
-  font-size: 48px;
-  line-height: 60px;
+  font-size: 1.5em;
+  line-height: 1.1;
   text-transform: uppercase;
 }
-body .text {
+body .text, body p {
   font-family: Source Sans Pro;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
-  line-height: 23px;
+  font-size: 1em;
+  line-height: 1.6;
 }
 body .quotetext {
   font-family: Source Serif Pro;
   font-style: italic;
   font-weight: 300;
-  font-size: 18px;
-  line-height: 23px;
+  font-size: 20px;
+  line-height: 1.6;
 }
 body .quoteex {
   font-family: Source Serif Pro;
   font-style: normal;
   font-weight: 300;
-  font-size: 18px;
-  line-height: 23px;
+  font-size: 20px;
+  line-height: 1.6;
+}
+body p {
+  max-width: 68ex;
 }
 
 body main .Biographie {
+  padding-top: 3em;
+  padding-bottom: 3em;
   display: flex;
-  padding: 112px;
+  gap: 3em;
+}
+body main .Biographie .left {
+  max-width: 40ex;
 }
 body main .Biographie .left .quote {
-  padding-top: 25px;
+  padding-top: 1.5em;
 }
-body main .Biographie .right {
-  padding-left: 60px;
+@media screen and (max-width: 77.5em) {
+  body main .Biographie {
+    flex-direction: column-reverse;
+  }
+  body main .Biographie .right,
+body main .Biographie .left {
+    max-width: 68ex;
+    margin: 0 auto;
+  }
 }
 body main .bibliographie {
-  background-color: black;
-  color: white;
+  background-color: #101010;
+  color: #ededed;
   padding: 112px;
 }
 body main .bibliographie .realisations {
   display: flex;
+  gap: 3em;
   padding-bottom: 150px;
-}
-body main .bibliographie .realisations .left {
-  padding-right: 70px;
 }
 body main .bibliographie .realisations .left .book_img {
   display: block;
@@ -130,6 +236,15 @@ body main .bibliographie .realisations .right .quote .portrait {
 }
 body main .bibliographie .realisations .right .quote .textquote {
   padding-left: 16px;
+}
+@media screen and (max-width: 77.5em) {
+  body main .bibliographie .realisations {
+    flex-direction: column-reverse;
+  }
+  body main .bibliographie .realisations .right {
+    max-width: 68ex;
+    margin: 0 auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
