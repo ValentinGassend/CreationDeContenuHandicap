@@ -189,13 +189,36 @@ body p {
 }
 
 button {
-  border-radius: 15px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
+  max-width: 15em;
+  width: 100%;
+  max-height: 3.5em;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5em;
+  border: 0;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  padding: 0.5em 1em;
   margin-top: 36px;
   text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  cursor: pointer;
+}
+@media (prefers-reduced-motion: no-preference) {
+  button {
+    transition: 200ms ease-out;
+    transition-property: outline-color, background-color;
+  }
+}
+button:focus-visible {
+  outline-color: #F0A732;
+}
+button:active {
+  background-color: #F0A732;
 }
 
 body main .Biographie {
@@ -223,7 +246,7 @@ body main .Biographie .left {
 body main .bibliographie {
   background-color: #101010;
   color: #ededed;
-  padding: 112px;
+  padding: 112px 0;
 }
 body main .bibliographie .realisations {
   display: flex;

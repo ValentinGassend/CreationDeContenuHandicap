@@ -1,9 +1,37 @@
 button {
-  border-radius: 15px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
+  max-width: 15em;
+  width: 100%;
+  max-height: 3.5em;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: .5em;
+  border: 0;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  padding: .5em 1em;
   margin-top: 36px;
   text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: .2px;
+  cursor: pointer;
+
+   // Ne pas utiliser d'animations si l'utilisateur ne le souhaite pas
+   @media (prefers-reduced-motion: no-preference) {
+     transition: 200ms ease-out;
+     transition-property: outline-color, background-color;
+   }
+
+  // Ajouter une bordure lors du focus clavier
+  &:focus-visible {
+    outline-color: $orange;
+  }
+
+  // Indicateur de click sur le bouton
+  &:active {
+    background-color: $orange;
+  }
 }
