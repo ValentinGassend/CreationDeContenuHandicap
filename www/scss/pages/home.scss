@@ -49,9 +49,16 @@ body {
             padding-top: 25px;
             .portrait {
               border-radius: 50%;
+              display: block;
+              width: 90px;
+              height: 90px;
             }
             .textquote {
               padding-left: 16px;
+              max-width: 65ex;
+              cite {
+                line-height: 1.5;
+              }
             }
           }
         }

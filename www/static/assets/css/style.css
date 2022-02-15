@@ -188,6 +188,16 @@ body p {
   max-width: 68ex;
 }
 
+button {
+  border-radius: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 36px;
+  text-transform: uppercase;
+}
+
 body main .Biographie {
   padding-top: 3em;
   padding-bottom: 3em;
@@ -233,9 +243,16 @@ body main .bibliographie .realisations .right .quote {
 }
 body main .bibliographie .realisations .right .quote .portrait {
   border-radius: 50%;
+  display: block;
+  width: 90px;
+  height: 90px;
 }
 body main .bibliographie .realisations .right .quote .textquote {
   padding-left: 16px;
+  max-width: 65ex;
+}
+body main .bibliographie .realisations .right .quote .textquote cite {
+  line-height: 1.5;
 }
 @media screen and (max-width: 77.5em) {
   body main .bibliographie .realisations {
