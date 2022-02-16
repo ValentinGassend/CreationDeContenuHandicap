@@ -14,7 +14,7 @@ html {
 body {
   .bigtitle {
     margin-bottom: 1em;
-    font-family: Source Sans Pro;
+    font-family: Source Sans Pro, sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 3em;
@@ -23,7 +23,7 @@ body {
   }
   .title {
     margin-bottom: 1.2em;
-    font-family: Source Sans Pro;
+    font-family: Source Sans Pro, sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 2.25em;
@@ -32,7 +32,7 @@ body {
   }
   .littletitle {
     margin-bottom: 0.5em;
-    font-family: Source Sans Pro;
+    font-family: Source Sans Pro, sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 1.5em;
@@ -40,21 +40,21 @@ body {
     text-transform: uppercase;
   }
   .text {
-    font-family: Source Sans Pro;
+    font-family: Source Sans Pro, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 1em;
     line-height: 1.6;
   }
   .quotetext {
-    font-family: Source Serif Pro;
+    font-family: Source Serif Pro, serif;
     font-style: italic;
     font-weight: 300;
     font-size: 20px;
     line-height: 1.6;
   }
   .quoteex {
-    font-family: Source Serif Pro;
+    font-family: Source Serif Pro, serif;
     font-style: normal;
     font-weight: 300;
     font-size: 20px;

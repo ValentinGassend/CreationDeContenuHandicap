@@ -46,7 +46,7 @@ body {
           }
           .quote {
             display: flex;
-            padding-top: 25px;
+            padding-top: 8ex;
             .portrait {
               border-radius: 50%;
               display: block;
@@ -57,6 +57,8 @@ body {
               padding-left: 16px;
               max-width: 65ex;
               cite {
+                display: block;
+                padding-bottom: 2ex;
                 line-height: 1.5;
               }
             }
