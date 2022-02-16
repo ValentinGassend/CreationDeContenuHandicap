@@ -8,7 +8,12 @@ body {
 
       .left {
         max-width: 40ex;
-
+        img {
+          display: block;
+          object-fit: cover;
+          max-width: 360px;
+          height: auto;
+        }
         .quote {
           padding-top: 1.5em;
         }
@@ -37,6 +42,8 @@ body {
         .left {
           .book_img {
             display: block;
+            max-width: 360px;
+            height: auto;
             border-radius: 179.348px 0px 173.5px;
           }
         }
