@@ -221,6 +221,15 @@ button:active {
   background-color: #F0A732;
 }
 
+footer {
+  background-color: #101010;
+  color: white;
+  text-align: center;
+}
+footer p {
+  max-width: 100%;
+}
+
 body main .Biographie {
   padding-top: 3em;
   padding-bottom: 3em;
