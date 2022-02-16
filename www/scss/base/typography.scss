@@ -4,7 +4,7 @@ html {
   font-size: 20px;
   line-height: 1.5;
   font-kerning: normal;
-  font-optical-sizing: always;
+  font-optical-sizing: auto;
 
   @supports (font-smooth: always) {
     font-smooth: always;
@@ -12,6 +12,18 @@ html {
 }
 
 body {
+
+  a {
+    text-decoration: none;
+    color: $white;
+    border-radius: 3px;
+    padding: 0 .25em;
+
+    &:focus-visible {
+      outline: 2px solid $orange;
+    }
+  }
+
   .bigtitle {
     margin-bottom: 1em;
     font-family: Source Sans Pro, sans-serif;
@@ -20,6 +32,12 @@ body {
     font-size: 3em;
     line-height: 0.8;
     text-transform: uppercase;
+
+    a {
+
+      color: $black;
+
+    }
   }
   .title {
     margin-bottom: 1.2em;
